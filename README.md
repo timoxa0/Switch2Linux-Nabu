@@ -12,7 +12,6 @@
 4) Move `android.boot.img` and `android.dtbo.img` to PC from `/sdcard/linux/`
 5) Place images:
    ```
-   empty dtbo.img      -> /sdcard/linux/linux.dtbo.img
    linux boot.img      -> /sdcard/linux/linux.boot.img
    vbmeta_disabled.img -> /sdcard/linux/linux.vbmeta.img
    ```
