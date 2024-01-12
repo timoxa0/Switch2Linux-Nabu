@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
             showToast("Switching!", applicationContext)
 
             Shell.cmd(
-                "dd if=/sdcard/linux/linux.dtbo.img of=/dev/block/bootdevice/by-name/dtbo$suffix",
+                "dd if=/dev/zero of=/dev/block/bootdevice/by-name/dtbo$suffix",
                 "dd if=/sdcard/linux/linux.boot.img of=/dev/block/bootdevice/by-name/boot$suffix",
                 "dd if=/sdcard/linux/linux.vbmeta.img of=/dev/block/bootdevice/by-name/vbmeta$suffix",
                 "sleep 1",
@@ -57,10 +57,6 @@ class MainActivity : AppCompatActivity() {
             buttonS2L.isEnabled = true
             if (!isFileExist("/sdcard/linux/")) {
                 Shell.cmd("mkdir /sdcard/linux/").exec()
-            }
-            if (!isFileExist("/sdcard/linux/linux.dtbo.img")) {
-                showToast("linux.dtbo.img not found", applicationContext)
-                finish()
             } else if (!isFileExist("/sdcard/linux/linux.vbmeta.img")) {
                 showToast("linux.vbmeta.img bot found", applicationContext)
                 finish()
