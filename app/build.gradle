@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'me.entaromia.windowsswitch'
+    namespace 'su.timoxa0.linuxswitch'
     compileSdk 33
 
     defaultConfig {
-        applicationId "me.entaromia.windowsswitch"
+        applicationId "su.timoxa0.linuxswitch"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -21,6 +21,10 @@ android {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.debug
+        }
+        debug {
+            versionNameSuffix 'debug'
         }
     }
     compileOptions {

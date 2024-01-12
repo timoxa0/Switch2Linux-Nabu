@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Windows Switch</string>
+    <string name="app_name">Switch to Linux</string>
+    <string name="button_switch_text">Switch to Linux</string>
+    <string name="qs_switch_text">Switch to Linux</string>
+    <string name="button_dump_text">Dump android images</string>
+    <string name="slot_text">Current slot: %s</string>
 </resources>

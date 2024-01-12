@@ -13,5 +13,5 @@ dependencyResolutionManagement {
         maven { url "https://jitpack.io" }
     }
 }
-rootProject.name = "WindowsSwitch"
+rootProject.name = "LinuxSwitch"
 include ':app'
