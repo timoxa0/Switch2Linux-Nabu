@@ -3,7 +3,7 @@
 ## Differences from original windows switch
 - Added Quick Settings tile
 - Added ability to dump android images
-- Cleans dtbo with boot
+- Cleans dtbo on reboot
 
 ## Installation
 1) Install app from [Releases](https://github.com/timoxa0/Switch2Linux-Nabu/releases)
