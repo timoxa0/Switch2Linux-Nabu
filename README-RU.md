@@ -20,7 +20,7 @@
    fastboot flash vbmeta_ab <path/to/vbmeta_disabled.img> 
    ```
 > [!Warning]\
-> Данное дейставие пожет привести к необходимости wipe data в recovery
+> Данное дейставие может привести к необходимости wipe data в recovery
 
 2) Установите последнюю версию `linuxswitch.apk` с [релиза](https://github.com/timoxa0/Switch2Linux-Nabu/releases)
 3) Запустите приложение и предоставьте root доступ
