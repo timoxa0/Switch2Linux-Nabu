@@ -1,4 +1,4 @@
-# Linux switch for Mi Pad 5 ([Windows Switch](https://github.com/entaromia/mi-pad5-windows-switch) fork)
+# Linux switch for Mi Pad 5 ([Windows Switch](https://github.com/entaromia/mi-pad5-windows-switch) fork) ([RU](./README-RU.md))
 
 
 ## Differences from original windows switch
