@@ -2,29 +2,32 @@
 
 
 ## Differences from original windows switch
-- Added Quick Settings tile
+- Added quick settings tile
 - Added ability to dump android images
 - Cleans dtbo on reboot
 
 
-## Prerequirements
+## Pre-requirements
 - Rooted android
 - Already installed linux
 
 
-## Intallation
+## Installation
 
 ### Android side:
-1) Install `linuxswitch.apk` from [Releases](https://github.com/timoxa0/Switch2Linux-Nabu/releases)
-2) Open installed app and grant root access
-3) Place images:
+1) Flash `vbmeta_disabled.img` via fastboot
+   ```console
+   fastboot flash vbmeta_ab <path/to/vbmeta_disabled.img> 
    ```
-   linux boot.img      -> /sdcard/linux/linux.boot.img
-   vbmeta_disabled.img -> /sdcard/linux/linux.vbmeta.img
-   ```
- 4) Open app again and tap "Dump android images"
- 5) Move `android.boot.img` and `android.dtbo.img` to PC from `/sdcard/linux/`
- 6) Done
+   > [!Warning]\
+   > This may result in the need to wipe data in recovery.
+
+2) Install `linuxswitch.apk` from [Releases](https://github.com/timoxa0/Switch2Linux-Nabu/releases)
+3) Open installed app and grant root access
+4) Open app again and tap "Dump android images"
+5) Move `android.boot.img` and `andoid.dtbo.img` to PC from `/sdcard/linux/`
+6) Rename linux boot to `linux.boot.img` and put it to `/sdcard/linux/`
+7) Now you can tap "Switch to Linux" to boot linux
 
 ### Linux side:
 1) Download `s2a.zip` from [Releases](https://github.com/timoxa0/Switch2Linux-Nabu/releases)
@@ -34,4 +37,4 @@
     ```console
     sudo ./install.sh
     ```
-5) Done
+5) Now you can reboot to android with Switch2Android app
