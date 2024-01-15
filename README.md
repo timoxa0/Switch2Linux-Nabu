@@ -19,8 +19,8 @@
    ```console
    fastboot flash vbmeta_ab <path/to/vbmeta_disabled.img> 
    ```
-   > [!Warning]\
-   > This may result in the need to wipe data in recovery.
+> [!Warning]\
+> This may result in the need to wipe data in recovery.
 
 2) Install `linuxswitch.apk` from [Releases](https://github.com/timoxa0/Switch2Linux-Nabu/releases)
 3) Open installed app and grant root access
