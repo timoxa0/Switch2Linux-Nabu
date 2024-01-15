@@ -54,15 +54,13 @@ class MainActivity : AppCompatActivity() {
 
             val suffix: String = Shell.cmd("getprop ro.boot.slot_suffix").exec().out[0].toString()
 
-            buttonS2L.isEnabled = true
             if (!isFileExist("/sdcard/linux/")) {
                 Shell.cmd("mkdir /sdcard/linux/").exec()
-            } else if (!isFileExist("/sdcard/linux/linux.vbmeta.img")) {
-                showToast("linux.vbmeta.img bot found", applicationContext)
-                finish()
-            } else if (!isFileExist("/sdcard/linux/linux.boot.img")) {
+            }
+            if (!isFileExist("/sdcard/linux/linux.boot.img")) {
                 showToast("linux.boot.img not found", applicationContext)
-                finish()
+            } else {
+                buttonS2L.isEnabled = true
             }
 
             textSlot.text = this.resources.getString(R.string.slot_text).format(suffix[1])
