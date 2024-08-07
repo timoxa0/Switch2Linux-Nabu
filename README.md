@@ -10,7 +10,7 @@
 ## Pre-requirements
 - Rooted android
 - Already installed linux
-
+- vbmeta_disable.img (https://timoxa0.su/share/nabu/manual/vbmeta_disabled.img)
 
 ## Installation
 
